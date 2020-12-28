@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+    <remote name="amlogic" fetch="ssh://git@openlinux.amlogic.com/"/>
+
+    <!--
+    <project name="yocto/meta-meson" remote="amlogic" path="meta-meson" revision="rdk-next"/>
+    <project name="yocto/meta-rdk-bsp-amlogic" remote="amlogic" path="meta-rdk-bsp-amlogic" revision="rdk-firebolt"/>
+    <project path="aml-patches" name="yocto/rdk/aml-patches" revision="master" remote="amlogic"/>
+    -->
+
+    <project dest-branch="rdk-next" name="yocto/meta-meson" path="meta-meson" remote="amlogic" revision="6e397fb02114bc5255c23262e4443c815fa3ae33" upstream="rdk-next"/>
+    <project dest-branch="rdk-next" name="yocto/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="amlogic" revision="19abadde558f9ad0e0703d858c1f2c9c86d734fb" upstream="rdk-firebolt"/>
+    <project dest-branch="master" name="yocto/rdk/aml-patches" path="aml-patches" remote="amlogic" revision="5b4e8cb5492411372e5c4fa6ecb317f51e810da4" upstream="master"/>
+
+</manifest>
+
