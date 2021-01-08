@@ -2,8 +2,8 @@
 <manifest>
   <remote name="rdk-amlogic" fetch="https://code.rdkcentral.com/r/collaboration/soc/amlogic/"/>
 
-  <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="4fbadd947063f0ebc254addb415cee7122aff9cf" upstream="amlogic-rdkservices"/>
-  <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="0b50c8d5f0b2a6af12d6e2f216d8eab6e177e9b6" upstream="amlogic-rdkservices"/>
+  <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="bee6c82a6883b433d3e22b8c6bf20d40f20667d5" upstream="amlogic-rdkservices"/>
+  <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="20207e846319173ff6220cad1e77ce0f1e542408" upstream="amlogic-rdkservices"/>
 
 </manifest>
 

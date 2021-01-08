@@ -7,26 +7,27 @@
     <default remote="cmf" revision="master" sync-j="2"/>
     <include name="amlogic-recipe-layers-rdk-firebolt-sc2.xml"/>
   
-  <project name="WebPlatformForEmbedded/meta-wpe" path="meta-wpe" remote="github" revision="ef632ab4ecb23e9de2c216294756a5de268c596a" upstream="morty"/>
-  <project dest-branch="rdk-next" name="apps/amazon/AVPK2" revision="d8efc03b4c0f138a208018b8dce3ad20561e4c2d" upstream="rdk-next"/>
-  <project dest-branch="rdk-next" name="apps/amazon/amazon-plugin" revision="63954e7210d5376a480ada6504b05f0685d91a83" upstream="rdk-next"/>
-  <project dest-branch="rdk-next" name="apps/amazon/rdk-oe/meta-rdk-amazon" path="meta-rdk-amazon" revision="b6a98404e4d5af7848630ea12df7a28349348ac0" upstream="rdk-next"/>
-  <project dest-branch="rdk-next" name="components/generic/rdk-oe/meta-cmf" path="meta-cmf" revision="320008d86b12e3bd75a84d14109a9d9a613ffa03" upstream="rdk-next"/>
-  <project dest-branch="rdk-next" name="components/generic/rdk-oe/meta-cmf-qt5" path="meta-cmf-qt5" revision="bd8b544e4c7dd54eba44f4883095ef5f39a1744a" upstream="rdk-next"/>
-  <project dest-branch="rdk-next" name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="49e79ed983ea513b745fa5a90b189678252ce470" upstream="rdk-next"/>
-  <project dest-branch="rdk-next" name="components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="9b59f53dfba09f0e849cfa1145a2fb0ef856f013" upstream="rdk-next"/>
-  <project dest-branch="rdk-next" name="components/generic/rdk-oe/meta-rdk-containers" path="meta-rdk-containers" revision="4ea05c8b0c9cda9939eb6b1415d0b526d224e223" upstream="rdk-next"/>
-  <project dest-branch="rdk-next" name="components/generic/rdk-oe/meta-rdk-ext" path="meta-rdk-ext" revision="925f01a059972a19c98592b1f8707597e819d3a7" upstream="rdk-next"/>
-  <project dest-branch="rdk-next" name="components/generic/rdk-oe/meta-rdk-video" path="meta-rdk-video" revision="e130d0dbff52d4f9b2806ad7c92b30b26efa0763" upstream="rdk-next"/>
-  <project dest-branch="rdk-next" name="components/opensource/patches/qtbase-5.1.1" path="meta-cmf-qt5/recipes-qt/qt5/qtbase-5.1.1" revision="fd0fb727c0f772778305678de185cd141e9cb550" upstream="rdk-next"/>
-  <project dest-branch="rdk-next" name="components/opensource/patches/qtwebkit-5.1.1" path="meta-cmf-qt5/recipes-qt/qt5/qtwebkit-5.1.1" revision="3f3646966af330655b5b4bc100a6895136b336a3" upstream="rdk-next"/>
-  <project dest-branch="rdk-next" name="components/opensource/patches/qtwebsockets-0.9.0" path="meta-cmf-qt5/recipes-qt/qt5/qtwebsockets-5.1.1" revision="1b1f826e57a79c26ad3a7dad6000ea44dc2883d0" upstream="rdk-next"/>
-  <project dest-branch="master" name="docs" revision="3504f8e2710bad5f75a7d9b2c94686825ddf7f34" upstream="master"/>
-  <project dest-branch="rdk/morty" name="rdk/components/opensource/oe/bitbake" path="openembedded-core/bitbake" revision="09958826966ce9e229a09d4a806a465a84677c75" upstream="rdk/morty"/>
-  <project dest-branch="rdk/morty" name="rdk/components/opensource/oe/meta-browser" path="meta-browser" revision="1569eeb9cc1b87632abbf35fbb05f4ac4eeb3987" upstream="rdk/morty"/>
-  <project dest-branch="rdk/morty" name="rdk/components/opensource/oe/meta-java" path="meta-java" revision="e4cf136f75b7ca4b7625993f69e9269726dcf283" upstream="rdk/morty"/>
-  <project dest-branch="rdk/morty" name="rdk/components/opensource/oe/meta-openembedded" path="meta-openembedded" revision="adf30b4edcedafcd2b07ea1288debf0a315e0c24" upstream="rdk/morty"/>
-  <project dest-branch="rdk/morty" name="rdk/components/opensource/oe/meta-qt5" path="meta-qt5" revision="73dd0501b44839c813acedfc7d7deea7867d4975" upstream="rdk/morty"/>
-  <project dest-branch="rdk/morty" name="rdk/components/opensource/oe/meta-virtualization" path="meta-virtualization" revision="70d1a845f702ab188ed504427e8e90ecf6dedc11" upstream="rdk/morty"/>
-  <project dest-branch="rdk/morty" name="rdk/components/opensource/oe/openembedded-core" path="openembedded-core" revision="0ae0560be05b4951f34a6e16499f0a08d4ed042d" upstream="rdk/morty"/>
+  
+  <project name="apps/amazon/AVPK2" revision="0e4d994bcb1113be710b3bf30a6da6958828a8ca" upstream="rdk-next" dest-branch="rdk-next"/>
+  <project name="apps/amazon/amazon-plugin" revision="9019c300b92550da971e5a4002e246fcfa0a2f42" upstream="rdk-next" dest-branch="rdk-next"/>
+  <project name="apps/amazon/rdk-oe/meta-rdk-amazon" path="meta-rdk-amazon" revision="a2cb21165c60021f61af7f64aef7d285c03d69d4" upstream="rdk-next" dest-branch="rdk-next"/>
+  <project name="components/generic/rdk-oe/meta-cmf" path="meta-cmf" revision="5aa00ca247da5cb30ea31e7cfa59758e8f04dd34" upstream="rdk-next" dest-branch="rdk-next"/>
+  <project name="components/generic/rdk-oe/meta-cmf-qt5" path="meta-cmf-qt5" revision="0598b63e973a4bfdb773ad80243af5ba1852d36a" upstream="rdk-next" dest-branch="rdk-next"/>
+  <project name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="5d1142375f9c3527fb798273176d4785b4ce8ea3" upstream="rdk-next" dest-branch="rdk-next"/>
+  <project name="components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="f243f47f5f3d74dbe2cc1aca973dbdfe2bbe0703" upstream="rdk-next" dest-branch="rdk-next"/>
+  <project name="components/generic/rdk-oe/meta-rdk-containers" path="meta-rdk-containers" revision="4ea05c8b0c9cda9939eb6b1415d0b526d224e223" upstream="rdk-next" dest-branch="rdk-next"/>
+  <project name="components/generic/rdk-oe/meta-rdk-ext" path="meta-rdk-ext" revision="6070ad88535e4ebb2b6314809338ef307726c8f0" upstream="rdk-next" dest-branch="rdk-next"/>
+  <project name="components/generic/rdk-oe/meta-rdk-video" path="meta-rdk-video" revision="ae7404182d805601a71cff5db9df99169ed868b9" upstream="rdk-next" dest-branch="rdk-next"/>
+  <project name="components/opensource/patches/qtbase-5.1.1" path="meta-cmf-qt5/recipes-qt/qt5/qtbase-5.1.1" revision="fd0fb727c0f772778305678de185cd141e9cb550" upstream="rdk-next" dest-branch="rdk-next"/>
+  <project name="components/opensource/patches/qtwebkit-5.1.1" path="meta-cmf-qt5/recipes-qt/qt5/qtwebkit-5.1.1" revision="3f3646966af330655b5b4bc100a6895136b336a3" upstream="rdk-next" dest-branch="rdk-next"/>
+  <project name="components/opensource/patches/qtwebsockets-0.9.0" path="meta-cmf-qt5/recipes-qt/qt5/qtwebsockets-5.1.1" revision="1b1f826e57a79c26ad3a7dad6000ea44dc2883d0" upstream="rdk-next" dest-branch="rdk-next"/>
+  <project name="docs" revision="b046f474385462c9e98a439739fc0dd6c7b9ee55" upstream="master" dest-branch="master"/>
+  <project name="rdk/components/opensource/oe/bitbake" path="openembedded-core/bitbake" revision="09958826966ce9e229a09d4a806a465a84677c75" upstream="rdk/morty" dest-branch="rdk/morty"/>
+  <project name="rdk/components/opensource/oe/meta-browser" path="meta-browser" revision="d35b48960a32e09211e8932fb4c176f96dc0e714" upstream="rdk/morty" dest-branch="rdk/morty"/>
+  <project name="rdk/components/opensource/oe/meta-java" path="meta-java" revision="e4cf136f75b7ca4b7625993f69e9269726dcf283" upstream="rdk/morty" dest-branch="rdk/morty"/>
+  <project name="rdk/components/opensource/oe/meta-openembedded" path="meta-openembedded" revision="3c749666f211e3a8d1d2c725af5148f459aa4276" upstream="rdk/morty" dest-branch="rdk/morty"/>
+  <project name="rdk/components/opensource/oe/meta-qt5" path="meta-qt5" revision="64d780f544e996e01561be217a5957ee09b9814e" upstream="rdk/morty" dest-branch="rdk/morty"/>
+  <project name="rdk/components/opensource/oe/meta-virtualization" path="meta-virtualization" revision="70d1a845f702ab188ed504427e8e90ecf6dedc11" upstream="rdk/morty" dest-branch="rdk/morty"/>
+  <project name="rdk/components/opensource/oe/openembedded-core" path="openembedded-core" revision="0ae0560be05b4951f34a6e16499f0a08d4ed042d" upstream="rdk/morty" dest-branch="rdk/morty"/>
+  
 </manifest>
