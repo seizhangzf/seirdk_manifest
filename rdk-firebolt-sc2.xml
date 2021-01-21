@@ -8,9 +8,6 @@
     <include name="amlogic-recipe-layers-rdk-firebolt-sc2.xml"/>
   
   
-  <project name="apps/amazon/AVPK2" revision="0e4d994bcb1113be710b3bf30a6da6958828a8ca" upstream="rdk-next" dest-branch="rdk-next"/>
-  <project name="apps/amazon/amazon-plugin" revision="9019c300b92550da971e5a4002e246fcfa0a2f42" upstream="rdk-next" dest-branch="rdk-next"/>
-  <project name="apps/amazon/rdk-oe/meta-rdk-amazon" path="meta-rdk-amazon" revision="a2cb21165c60021f61af7f64aef7d285c03d69d4" upstream="rdk-next" dest-branch="rdk-next"/>
   <project name="components/generic/rdk-oe/meta-cmf" path="meta-cmf" revision="5aa00ca247da5cb30ea31e7cfa59758e8f04dd34" upstream="rdk-next" dest-branch="rdk-next"/>
   <project name="components/generic/rdk-oe/meta-cmf-qt5" path="meta-cmf-qt5" revision="0598b63e973a4bfdb773ad80243af5ba1852d36a" upstream="rdk-next" dest-branch="rdk-next"/>
   <project name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="5d1142375f9c3527fb798273176d4785b4ce8ea3" upstream="rdk-next" dest-branch="rdk-next"/>
