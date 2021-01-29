@@ -1,16 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <manifest>
-    <remote name="amlogic" fetch="ssh://git@openlinux.amlogic.com/"/>
+  <remote name="rdk-amlogic" fetch="https://code.rdkcentral.com/r/collaboration/soc/amlogic/"/>
 
-    <!--
-    <project name="yocto/meta-meson" remote="amlogic" path="meta-meson" revision="rdk-next"/>
-    <project name="yocto/meta-rdk-bsp-amlogic" remote="amlogic" path="meta-rdk-bsp-amlogic" revision="rdk-firebolt"/>
-    <project path="aml-patches" name="yocto/rdk/aml-patches" revision="master" remote="amlogic"/>
-    -->
-
-    <project dest-branch="rdk-next" name="yocto/meta-meson" path="meta-meson" remote="amlogic" revision="ff0a5d7bb451dc12b63f83cfe1a27f7d2dfc9c06" upstream="rdk-next"/>
-    <project dest-branch="rdk-firebolt" name="yocto/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="amlogic" revision="80a3b24a309638a293d635fa884458ec36beb9f1" upstream="rdk-firebolt"/>
-    <project dest-branch="master" name="yocto/rdk/aml-patches" path="aml-patches" remote="amlogic" revision="bb8b9ac45e78a0080afca81b5d776a9106f54ba9" upstream="master"/>
-
+  <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="fc023607bfde869c40418c80b4b7c2bfec884daf" upstream="amlogic-rdkservices"/>
+  <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="20207e846319173ff6220cad1e77ce0f1e542408" upstream="amlogic-rdkservices"/>
 </manifest>
 
