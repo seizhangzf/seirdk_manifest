@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<manifest>
-  <remote name="rdk-amlogic" fetch="https://code.rdkcentral.com/r/collaboration/soc/amlogic/"/>
-
-  <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="9332b2b3b559b6008b9a487be4db0a56f1d5844f" upstream="amlogic-rdkservices"/>
-  <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="20207e846319173ff6220cad1e77ce0f1e542408" upstream="amlogic-rdkservices"/>
-
-</manifest>
-
