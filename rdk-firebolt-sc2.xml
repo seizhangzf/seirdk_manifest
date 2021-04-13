@@ -7,7 +7,7 @@
     <remote name="rdk-amlogic" fetch="https://code.rdkcentral.com/r/collaboration/soc/amlogic/"/>
     <default remote="cmf" revision="master" sync-j="2"/>
 
-  <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="1de7ffc9b80295849335c8717256aebd18cd0e53" upstream="amlogic-rdkservices"/>
+  <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="d6892e83ad7c8e8151b3077fecaa859ffa124c13" upstream="amlogic-rdkservices"/>
   <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="fd533ab08c96eff6695b1976703d93e21da0946e" upstream="amlogic-rdkservices"/>
 
   <!--
