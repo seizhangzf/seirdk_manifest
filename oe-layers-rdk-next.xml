@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+    <project name="rdk/components/opensource/oe/bitbake" path="openembedded-core/bitbake" revision="rdk/morty"/>
+    <project name="rdk/components/opensource/oe/meta-browser" path="meta-browser" revision="rdk/morty"/>
+    <project name="rdk/components/opensource/oe/meta-java" path="meta-java" revision="rdk/morty"/>
+    <project name="rdk/components/opensource/oe/meta-openembedded" path="meta-openembedded" revision="rdk/morty"/>
+    <project name="rdk/components/opensource/oe/meta-qt5" path="meta-qt5" revision="rdk/morty"/>
+    <project name="rdk/components/opensource/oe/meta-virtualization" path="meta-virtualization" revision="rdk/morty"/>
+    <project name="rdk/components/opensource/oe/openembedded-core" path="openembedded-core" revision="rdk/morty"/>
+</manifest>

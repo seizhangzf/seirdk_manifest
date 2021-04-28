@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+    <remote name="cmf" review="https://code.rdkcentral.com/r/" fetch="https://code.rdkcentral.com/r/"/>
+    <project remote="cmf" name="apps/amazon/AVPK2" path="apps/amazon/AVPK2" revision="rdk-next" />
+    <project remote="cmf" name="apps/amazon/amazon-plugin" path="apps/amazon/amazon-plugin" revision="rdk-next"/>
+    <project remote="cmf" name="apps/amazon/rdk-oe/meta-rdk-amazon" path="meta-rdk-amazon" revision="rdk-next" />
+</manifest>
+
