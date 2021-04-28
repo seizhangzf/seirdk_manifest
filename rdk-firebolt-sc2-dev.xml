@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+    <remote name="cmf" review="https://code.rdkcentral.com/r/" fetch="https://code.rdkcentral.com/r/"/>
+    <remote name="github" fetch="https://github.com" review=""/>
+    <remote name="linaro" fetch="http://git.linaro.org" review=""/>
+    <remote name="yocto" fetch="http://git.yoctoproject.org/git" review=""/>
+    <default remote="cmf" revision="master" sync-j="2"/>
+    <include name="oe-layers-rdk-next.xml"/>
+    <include name="amlogic-layers-rdk-firebolt.xml"/>
+    <include name="premium-apps.xml"/>
+    <project name="components/generic/rdk-oe/meta-cmf" path="meta-cmf" revision="rdk-next"/>
+    <project name="components/generic/rdk-oe/meta-cmf-qt5" path="meta-cmf-qt5" revision="rdk-next"/>
+    <project name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="rdk-next"/>
+    <project name="components/generic/rdk-oe/meta-cmf-video-restricted" path="meta-cmf-video-restricted"/>
+    <project name="components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="rdk-next"/>
+    <project name="components/generic/rdk-oe/meta-rdk-containers" path="meta-rdk-containers" revision="rdk-next"/>
+    <project name="components/generic/rdk-oe/meta-rdk-ext" path="meta-rdk-ext" revision="rdk-next"/>
+    <project name="components/generic/rdk-oe/meta-rdk-video" path="meta-rdk-video" revision="rdk-next"/>
+    <project name="components/opensource/patches/qtbase-5.1.1" path="meta-cmf-qt5/recipes-qt/qt5/qtbase-5.1.1" revision="rdk-next"/>
+    <project name="components/opensource/patches/qtwebkit-5.1.1" path="meta-cmf-qt5/recipes-qt/qt5/qtwebkit-5.1.1" revision="rdk-next"/>
+    <project name="components/opensource/patches/qtwebsockets-0.9.0" path="meta-cmf-qt5/recipes-qt/qt5/qtwebsockets-5.1.1" revision="rdk-next"/>
+    <project name="components/restricted/rdk-oe/meta-cmf-restricted" path="meta-cmf-restricted" revision="rdk-next"/>
+    <project name="components/restricted/rdk-oe/meta-rdk-restricted" path="meta-rdk-restricted" revision="rdk-next"/>
+    <project name="docs"/>
+</manifest>
