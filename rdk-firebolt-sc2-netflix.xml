@@ -4,37 +4,21 @@
     <remote name="github" fetch="https://github.com" review=""/>
     <remote name="linaro" fetch="http://git.linaro.org" review=""/>
     <remote name="yocto" fetch="http://git.yoctoproject.org/git" review=""/>
-    <remote name="rdk-amlogic" fetch="https://code.rdkcentral.com/r/collaboration/soc/amlogic/"/>
     <default remote="cmf" revision="master" sync-j="2"/>
-
-  <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="d6892e83ad7c8e8151b3077fecaa859ffa124c13" upstream="amlogic-rdkservices"/>
-  <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="fd533ab08c96eff6695b1976703d93e21da0946e" upstream="amlogic-rdkservices"/>
-
-  <!--
-  <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="amlogic-rdkservices"/>
-  <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="amlogic-rdkservices"/>
-  <project name="apps/amazon/AVPK2" revision="9888a240f5934ddc624101edc68a0612a5c4763c" upstream="rdk-next" dest-branch="rdk-next"/>
-  <project name="apps/amazon/amazon-plugin" revision="a0c3db27c38e083d6e42bb0f7b62494ae5b652ad" upstream="rdk-next" dest-branch="rdk-next"/>
-  <project name="apps/amazon/rdk-oe/meta-rdk-amazon" path="meta-rdk-amazon" revision="2b18789bf67f67ea823846525dd09fcea0468c40" upstream="rdk-next" dest-branch="rdk-next"/>
--->
-  <project name="components/generic/rdk-oe/meta-cmf" path="meta-cmf" revision="0aa592c71b61c3c3a7dec84f081217784c15f834" upstream="rdk-next"/>
-  <project name="components/generic/rdk-oe/meta-cmf-qt5" path="meta-cmf-qt5" revision="0598b63e973a4bfdb773ad80243af5ba1852d36a" upstream="rdk-next"/>
-  <project name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="3497bac77226133c180050928b0c260bcca722f4" upstream="rdk-next"/>
-  <project name="components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="184583b86b735311fc099ff774db3e3941ad6265" upstream="rdk-next"/>
-  <project name="components/generic/rdk-oe/meta-rdk-containers" path="meta-rdk-containers" revision="4ea05c8b0c9cda9939eb6b1415d0b526d224e223" upstream="rdk-next"/>
-  <project name="components/generic/rdk-oe/meta-rdk-ext" path="meta-rdk-ext" revision="e908687a4bcee120ec3116afe5235fb65a0bf06e" upstream="rdk-next"/>
-  <project name="components/generic/rdk-oe/meta-rdk-video" path="meta-rdk-video" revision="884d24085849573111ade8bd205edbfd35c2f900" upstream="rdk-next"/>
-  <project name="components/opensource/patches/qtbase-5.1.1" path="meta-cmf-qt5/recipes-qt/qt5/qtbase-5.1.1" revision="fd0fb727c0f772778305678de185cd141e9cb550" upstream="rdk-next"/>
-  <project name="components/opensource/patches/qtwebkit-5.1.1" path="meta-cmf-qt5/recipes-qt/qt5/qtwebkit-5.1.1" revision="3f3646966af330655b5b4bc100a6895136b336a3" upstream="rdk-next"/>
-  <project name="components/opensource/patches/qtwebsockets-0.9.0" path="meta-cmf-qt5/recipes-qt/qt5/qtwebsockets-5.1.1" revision="1b1f826e57a79c26ad3a7dad6000ea44dc2883d0" upstream="rdk-next"/>
-  <project name="components/restricted/rdk-oe/meta-cmf-restricted" path="meta-cmf-restricted" revision="cfe9b8ab834878dbc722127c70e9b1e3a7343599" upstream="rdk-next"/>
-  <project name="components/restricted/rdk-oe/meta-rdk-restricted" path="meta-rdk-restricted" revision="ed6eab53332b39f52257868b28bf687e8ad19a45" upstream="rdk-next"/>
-  <project name="docs" revision="0d4ce0a4e63223402ea47e4a2665ac3d78f5758f" upstream="master"/>
-  <project name="rdk/components/opensource/oe/bitbake" path="openembedded-core/bitbake" revision="09958826966ce9e229a09d4a806a465a84677c75" upstream="rdk/morty"/>
-  <project name="rdk/components/opensource/oe/meta-browser" path="meta-browser" revision="d35b48960a32e09211e8932fb4c176f96dc0e714" upstream="rdk/morty"/>
-  <project name="rdk/components/opensource/oe/meta-java" path="meta-java" revision="e4cf136f75b7ca4b7625993f69e9269726dcf283" upstream="rdk/morty"/>
-  <project name="rdk/components/opensource/oe/meta-openembedded" path="meta-openembedded" revision="ebd34e4086e69afd055aa5ee4392ff28c39510a3" upstream="rdk/morty"/>
-  <project name="rdk/components/opensource/oe/meta-qt5" path="meta-qt5" revision="1d8a3769878ce4ace7c8d17f9f325731d56acbbe" upstream="rdk/morty"/>
-  <project name="rdk/components/opensource/oe/meta-virtualization" path="meta-virtualization" revision="70d1a845f702ab188ed504427e8e90ecf6dedc11" upstream="rdk/morty"/>
-  <project name="rdk/components/opensource/oe/openembedded-core" path="openembedded-core" revision="8b51449ea85580ebfc732c778144085d05d0b866" upstream="rdk/morty"/>
+    <include name="oe-layers-rdk-next.xml"/>
+    <include name="amlogic-layers-rdk-firebolt.xml"/>
+    <project name="components/generic/rdk-oe/meta-cmf" path="meta-cmf" revision="rdk-next"/>
+    <project name="components/generic/rdk-oe/meta-cmf-qt5" path="meta-cmf-qt5" revision="rdk-next"/>
+    <project name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="rdk-next"/>
+    <project name="components/generic/rdk-oe/meta-cmf-video-restricted" path="meta-cmf-video-restricted"/>
+    <project name="components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="rdk-next"/>
+    <project name="components/generic/rdk-oe/meta-rdk-containers" path="meta-rdk-containers" revision="rdk-next"/>
+    <project name="components/generic/rdk-oe/meta-rdk-ext" path="meta-rdk-ext" revision="rdk-next"/>
+    <project name="components/generic/rdk-oe/meta-rdk-video" path="meta-rdk-video" revision="rdk-next"/>
+    <project name="components/opensource/patches/qtbase-5.1.1" path="meta-cmf-qt5/recipes-qt/qt5/qtbase-5.1.1" revision="rdk-next"/>
+    <project name="components/opensource/patches/qtwebkit-5.1.1" path="meta-cmf-qt5/recipes-qt/qt5/qtwebkit-5.1.1" revision="rdk-next"/>
+    <project name="components/opensource/patches/qtwebsockets-0.9.0" path="meta-cmf-qt5/recipes-qt/qt5/qtwebsockets-5.1.1" revision="rdk-next"/>
+    <project name="components/restricted/rdk-oe/meta-cmf-restricted" path="meta-cmf-restricted" revision="rdk-next"/>
+    <project name="components/restricted/rdk-oe/meta-rdk-restricted" path="meta-rdk-restricted" revision="rdk-next"/>
+    <project name="docs"/>
 </manifest>
