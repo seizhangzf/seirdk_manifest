@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+    <remote name="cmf" review="https://code.rdkcentral.com/r/" fetch="https://code.rdkcentral.com/r/"/>
+    <remote name="github" fetch="https://github.com" review=""/>
+    <remote name="linaro" fetch="http://git.linaro.org" review=""/>
+    <remote name="yocto" fetch="http://git.yoctoproject.org/git" review=""/>
+    <remote name="rdk-amlogic" fetch="https://code.rdkcentral.com/r/collaboration/soc/amlogic/"/>
+    <default remote="cmf" revision="master" sync-j="2"/>
+
+  <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="f4261b358db084957d8af5bb1ae0a9eff93cddc9" upstream="amlogic-ref-rdkservices"/>
+  <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="8d2016a60a227a23f2b9fc9779807c8c54cc3e34" upstream="amlogic-ref-rdkservices"/>
+
+  <!--
+  <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="amlogic-ref-rdkservices"/>
+  <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="amlogic-ref-rdkservices"/>
+  -->
+
+  <project name="components/generic/rdk-oe/meta-cmf" path="meta-cmf" revision="0a3879f15930b7156125ab989de061b5fe4bffd6" upstream="rdk-next"/>
+  <project name="components/generic/rdk-oe/meta-cmf-qt5" path="meta-cmf-qt5" revision="0598b63e973a4bfdb773ad80243af5ba1852d36a" upstream="rdk-next"/>
+  <project name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="694c95b61bf50102184413f163aa4bac73da010e" upstream="rdk-next"/>
+  <project name="components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="c5e7b1ed00b8f3d3a4b0a0525a2895ea640233d3" upstream="rdk-next"/>
+  <project name="components/generic/rdk-oe/meta-rdk-containers" path="meta-rdk-containers" revision="4ea05c8b0c9cda9939eb6b1415d0b526d224e223" upstream="rdk-next"/>
+  <project name="components/generic/rdk-oe/meta-rdk-ext" path="meta-rdk-ext" revision="565b7cd4923f6584785b43120e7a96c495aa6206" upstream="rdk-next"/>
+  <project name="components/generic/rdk-oe/meta-rdk-video" path="meta-rdk-video" revision="28a56fa823f5bb975b7c25eca3b5e5347ef9b337" upstream="rdk-next"/>
+  <project name="components/opensource/patches/qtbase-5.1.1" path="meta-cmf-qt5/recipes-qt/qt5/qtbase-5.1.1" revision="fd0fb727c0f772778305678de185cd141e9cb550" upstream="rdk-next"/>
+  <project name="components/opensource/patches/qtwebkit-5.1.1" path="meta-cmf-qt5/recipes-qt/qt5/qtwebkit-5.1.1" revision="3f3646966af330655b5b4bc100a6895136b336a3" upstream="rdk-next"/>
+  <project name="components/opensource/patches/qtwebsockets-0.9.0" path="meta-cmf-qt5/recipes-qt/qt5/qtwebsockets-5.1.1" revision="1b1f826e57a79c26ad3a7dad6000ea44dc2883d0" upstream="rdk-next"/>
+  <project name="components/restricted/rdk-oe/meta-cmf-restricted" path="meta-cmf-restricted" revision="146477a0384fcfa689b47a7fe1c9f35586d5786e" upstream="rdk-next"/>
+  <project name="components/restricted/rdk-oe/meta-rdk-restricted" path="meta-rdk-restricted" revision="001c1cf966ef8ad4f831405a1069de940fa1c14d" upstream="rdk-next"/>
+  <project name="docs" revision="7a07dce7a7fe27c000f15334aec607d622086f4e" upstream="master"/>
+  <project name="rdk/components/opensource/oe/bitbake" path="openembedded-core/bitbake" revision="09958826966ce9e229a09d4a806a465a84677c75" upstream="rdk/morty"/>
+  <project name="rdk/components/opensource/oe/meta-browser" path="meta-browser" revision="d35b48960a32e09211e8932fb4c176f96dc0e714" upstream="rdk/morty"/>
+  <project name="rdk/components/opensource/oe/meta-java" path="meta-java" revision="e4cf136f75b7ca4b7625993f69e9269726dcf283" upstream="rdk/morty"/>
+  <project name="rdk/components/opensource/oe/meta-openembedded" path="meta-openembedded" revision="a7aa4b334c468096d8e72cc72eb3c972e9a1cbe2" upstream="rdk/morty"/>
+  <project name="rdk/components/opensource/oe/meta-qt5" path="meta-qt5" revision="1d8a3769878ce4ace7c8d17f9f325731d56acbbe" upstream="rdk/morty"/>
+  <project name="rdk/components/opensource/oe/meta-virtualization" path="meta-virtualization" revision="70d1a845f702ab188ed504427e8e90ecf6dedc11" upstream="rdk/morty"/>
+  <project name="rdk/components/opensource/oe/openembedded-core" path="openembedded-core" revision="8b51449ea85580ebfc732c778144085d05d0b866" upstream="rdk/morty"/>
+  
+</manifest>
