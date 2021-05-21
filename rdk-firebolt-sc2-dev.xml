@@ -4,10 +4,13 @@
     <remote name="github" fetch="https://github.com" review=""/>
     <remote name="linaro" fetch="http://git.linaro.org" review=""/>
     <remote name="yocto" fetch="http://git.yoctoproject.org/git" review=""/>
+    <remote name="rdk-amlogic" fetch="https://code.rdkcentral.com/r/collaboration/soc/amlogic/"/>
     <default remote="cmf" revision="master" sync-j="2"/>
     <include name="oe-layers-rdk-next.xml"/>
-    <include name="amlogic-layers-rdk-firebolt.xml"/>
     <include name="premium-apps.xml"/>
+    <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="amlogic-ref-rdkservices"/>
+    <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="amlogic-ref-rdkservices"/>
+    <project name="yocto_oe/layers/meta-rdk-aml" path="meta-rdk-aml" remote="rdk-amlogic" revision="rdk-next"/>
     <project name="components/generic/rdk-oe/meta-cmf" path="meta-cmf" revision="rdk-next"/>
     <project name="components/generic/rdk-oe/meta-cmf-qt5" path="meta-cmf-qt5" revision="rdk-next"/>
     <project name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="rdk-next"/>
