@@ -11,11 +11,11 @@
     <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="amlogic-ref-rdkservices"/>
     <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="amlogic-ref-rdkservices"/>
     <project name="yocto_oe/layers/meta-rdk-aml" path="meta-rdk-aml" remote="rdk-amlogic" revision="rdk-next"/>
-    <project name="components/generic/rdk-oe/meta-cmf" path="meta-cmf" revision="rdk-next"/>
+    <project name="rdk/components/generic/rdk-oe/meta-cmf" path="meta-cmf" revision="rdk-next"/>
     <project name="components/generic/rdk-oe/meta-cmf-qt5" path="meta-cmf-qt5" revision="rdk-next"/>
     <project name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="rdk-next"/>
     <project name="components/generic/rdk-oe/meta-cmf-video-restricted" path="meta-cmf-video-restricted"/>
-    <project name="components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="rdk-next"/>
+    <project name="rdk/components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="rdk-next"/>
     <project name="components/generic/rdk-oe/meta-rdk-containers" path="meta-rdk-containers" revision="rdk-next"/>
     <project name="components/generic/rdk-oe/meta-rdk-ext" path="meta-rdk-ext" revision="rdk-next"/>
     <project name="components/generic/rdk-oe/meta-rdk-video" path="meta-rdk-video" revision="rdk-next"/>
