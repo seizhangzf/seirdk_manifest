@@ -12,7 +12,7 @@
   <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="f27a3695676393b3425e6bb7f7cc40715f8e7978" upstream="amlogic-ref-dunfell-rdkservices"/>
   <project remote="cmf" name="apps/amazon/amazon-plugin" path="apps/amazon/amazon-plugin" revision="rdk-next"/>
   <project remote="cmf" name="apps/amazon/rdk-oe/meta-rdk-amazon" path="meta-rdk-amazon" revision="rdk-next" />
-  <project name="yocto_oe/layers/meta-rdk-aml" path="meta-rdk-aml" remote="rdk-amlogic" revision="b44f4e3ab3d0dd8ebb78a6e73355ec40cf91e50b" upstream="rdk-next" dest-branch="rdk-next"/>
+  <project name="yocto_oe/layers/meta-rdk-aml" path="meta-rdk-aml" remote="rdk-amlogic" revision="53269cc5b12f98979e4662dfcf9aaf006f9fcd90" upstream="rdk-next" dest-branch="rdk-next"/>
   <!--
   <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="amlogic-ref-dunfell-rdkservices"/>
   <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="amlogic-ref-dunfell-rdkservices"/>
