@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="cmf" fetch="https://code.rdkcentral.com/r/a/" review="https://code.rdkcentral.com/r/a/"/>
+  <remote name="github" fetch="https://github.com"/>
+  <remote name="linaro" fetch="http://git.linaro.org"/>
+  <remote name="openembedded" fetch="https://git.openembedded.org"/>
+  <remote name="yocto" fetch="http://git.yoctoproject.org/git"/>
+  <remote name="rdk-amlogic" fetch="https://code.rdkcentral.com/r/collaboration/soc/amlogic/"/>
+  <default remote="cmf" revision="master" sync-j="2"/>
+  
+   <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="2cb826fccf718307fc7b53f2e9c5cbb8a12672d5" upstream="amlogic-ref-dunfell-rdkservices"/>
+  <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="f27a3695676393b3425e6bb7f7cc40715f8e7978" upstream="amlogic-ref-dunfell-rdkservices"/>
+  <project remote="cmf" name="apps/amazon/amazon-plugin" path="apps/amazon/amazon-plugin" revision="rdk-next"/>
+  <project remote="cmf" name="apps/amazon/rdk-oe/meta-rdk-amazon" path="meta-rdk-amazon" revision="rdk-next" />
+  <project name="yocto_oe/layers/meta-rdk-aml" path="meta-rdk-aml" remote="rdk-amlogic" revision="rdk-next" upstream="rdk-next" dest-branch="rdk-next"/>
+  <!--
+  <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="amlogic-ref-dunfell-rdkservices"/>
+  <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="amlogic-ref-dunfell-rdkservices"/>
+  -->
+  <project name="components/generic/rdk-oe/meta-cmf-qt5" path="meta-cmf-qt5" revision="rdk-next"/>
+  <project name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="rdk-next"/>
+  <project name="components/generic/rdk-oe/meta-cmf-video-reference" path="meta-cmf-video-reference"/>
+  <project name="components/generic/rdk-oe/meta-cmf-video-reference-next" path="meta-cmf-video-reference-next"/>  
+  <project name="components/generic/rdk-oe/meta-cmf-video-restricted" path="meta-cmf-video-restricted"/>  
+  <project name="components/generic/rdk-oe/meta-dvb" path="meta-dvb" revision="rdk-next"/>
+  <project name="components/generic/rdk-oe/meta-rdk-containers" path="meta-rdk-containers" revision="rdk-next"/>
+  <project name="components/generic/rdk-oe/meta-rdk-video" path="meta-rdk-video" revision="rdk-next"/>
+  <project name="components/opensource/patches/qtbase-5.1.1" path="meta-cmf-qt5/recipes-qt/qt5/qtbase-5.1.1" revision="rdk-next"/>
+  <project name="components/opensource/patches/qtwebkit-5.1.1" path="meta-cmf-qt5/recipes-qt/qt5/qtwebkit-5.1.1" revision="rdk-next"/>
+  <project name="components/opensource/patches/qtwebsockets-0.9.0" path="meta-cmf-qt5/recipes-qt/qt5/qtwebsockets-5.1.1" revision="rdk-next"/>
+  <project name="components/restricted/rdk-oe/meta-cmf-restricted" path="meta-cmf-restricted" revision="rdk-next"/>
+  <project name="components/restricted/rdk-oe/meta-rdk-restricted" path="meta-rdk-restricted" revision="rdk-next"/>
+  <project name="docs"/>
+  <project name="rdk/components/generic/rdk-oe/meta-cmf" path="meta-cmf" revision="rdk-next"/>
+  <project name="rdk/components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="rdk-next"/>
+  <project name="rdk/components/generic/rdk-oe/meta-rdk-ext" path="meta-rdk-ext" revision="rdk-next"/>
+  <project name="rdk/components/generic/rdk-oe/meta-rdk-voice-sdk" path="meta-rdk-voice-sdk" revision="rdk-next"/>
+  <project name="rdk/components/opensource/oe/bitbake" path="openembedded-core/bitbake" revision="1.46"/>
+  <project name="rdk/components/opensource/oe/meta-gplv2" path="meta-gplv2" revision="dunfell"/>
+  <project name="rdk/components/opensource/oe/meta-openembedded" path="meta-openembedded" revision="rdk/dunfell"/>
+  <project name="rdk/components/opensource/oe/meta-python2" path="meta-python2" revision="dunfell"/>
+  <project name="rdk/components/opensource/oe/meta-qt5" path="meta-qt5" revision="rdk/morty"/>
+  <project name="rdk/components/opensource/oe/meta-virtualization" path="meta-virtualization" revision="dunfell"/>
+  <project name="rdk/components/opensource/oe/openembedded-core" path="openembedded-core" revision="rdk/dunfell"/>
+</manifest>
