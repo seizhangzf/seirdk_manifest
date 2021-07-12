@@ -8,11 +8,12 @@
   <remote name="rdk-amlogic" fetch="https://code.rdkcentral.com/r/collaboration/soc/amlogic/"/>
   <default remote="cmf" revision="master" sync-j="2"/>
   
-   <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="2cb826fccf718307fc7b53f2e9c5cbb8a12672d5" upstream="amlogic-ref-dunfell-rdkservices"/>
-  <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="f27a3695676393b3425e6bb7f7cc40715f8e7978" upstream="amlogic-ref-dunfell-rdkservices"/>
-  <project remote="cmf" name="apps/amazon/amazon-plugin" path="apps/amazon/amazon-plugin" revision="rdk-next"/>
-  <project remote="cmf" name="apps/amazon/rdk-oe/meta-rdk-amazon" path="meta-rdk-amazon" revision="rdk-next" />
-  <project name="yocto_oe/layers/meta-rdk-aml" path="meta-rdk-aml" remote="rdk-amlogic" revision="53269cc5b12f98979e4662dfcf9aaf006f9fcd90" upstream="rdk-next" dest-branch="rdk-next"/>
+  <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="b871ad2e29c2d68d6180584522fffa0a387d9190" upstream="amlogic-ref-dunfell-rdkservices"/>
+  <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="46c07bcdf7894d22d8302f647efd687b7e427b7d" upstream="amlogic-ref-dunfell-rdkservices"/>
+  <project dest-branch="rdk-next" name="apps/amazon/AVPK2" revision="00780122c83a738128720f28078b11b4d5ca7ef8" upstream="rdk-next"/>
+  <project dest-branch="rdk-next" name="apps/amazon/amazon-plugin" revision="4de5bbb998d1cd3beba45f82081a6393b4a85d2d" upstream="rdk-next"/>
+  <project dest-branch="rdk-next" name="apps/amazon/rdk-oe/meta-rdk-amazon" path="meta-rdk-amazon" revision="4e81b63629650e9315063379ed63d389e1ed330b" upstream="rdk-next"/>
+  <project name="yocto_oe/layers/meta-rdk-aml" path="meta-rdk-aml" remote="rdk-amlogic" revision="e3ba496ff282bd83ee0e36acc5f790b222e3abdc" upstream="rdk-next" dest-branch="rdk-next"/>
   <!--
   <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="amlogic-ref-dunfell-rdkservices"/>
   <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="amlogic-ref-dunfell-rdkservices"/>
