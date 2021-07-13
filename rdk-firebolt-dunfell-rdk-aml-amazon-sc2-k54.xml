@@ -9,7 +9,7 @@
   <default remote="cmf" revision="master" sync-j="2"/>
   
   <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="b871ad2e29c2d68d6180584522fffa0a387d9190" upstream="amlogic-ref-dunfell-rdkservices"/>
-  <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="46c07bcdf7894d22d8302f647efd687b7e427b7d" upstream="amlogic-ref-dunfell-rdkservices"/>
+  <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="1dc0cec6041424bb746930b805723f9a78028733" upstream="amlogic-ref-dunfell-rdkservices"/>
   <project dest-branch="rdk-next" name="apps/amazon/AVPK2" revision="00780122c83a738128720f28078b11b4d5ca7ef8" upstream="rdk-next"/>
   <project dest-branch="rdk-next" name="apps/amazon/amazon-plugin" revision="4de5bbb998d1cd3beba45f82081a6393b4a85d2d" upstream="rdk-next"/>
   <project dest-branch="rdk-next" name="apps/amazon/rdk-oe/meta-rdk-amazon" path="meta-rdk-amazon" revision="4e81b63629650e9315063379ed63d389e1ed330b" upstream="rdk-next"/>
