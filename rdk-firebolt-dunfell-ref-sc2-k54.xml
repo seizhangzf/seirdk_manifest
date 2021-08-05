@@ -6,6 +6,7 @@
   <remote name="openembedded" fetch="https://git.openembedded.org"/>
   <remote name="yocto" fetch="http://git.yoctoproject.org/git"/>
   <remote name="rdk-amlogic" fetch="https://code.rdkcentral.com/r/collaboration/soc/amlogic/"/>
+  <remote name="openlinux-amlogic" fetch="ssh://git@openlinux.amlogic.com/"/>
   <default remote="cmf" revision="master" sync-j="2"/>
   
   <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="ec1c2603bb45b884eaacd58bce82e51ae367932b" upstream="amlogic-ref-dunfell-rdkservices"/>
@@ -16,6 +17,10 @@
   <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="amlogic-ref-dunfell-rdkservices"/>
   -->
   
+  <project dest-branch="oplinux-rdkm" name="yocto/meta-aml-netflix" path="meta-aml-netflix" remote="openlinux-amlogic" revision="2c135f443cc578a3b607cf2149e1de6d96eaa3ec" upstream="oplinux-rdkm"/>
+  <project name="apps/amazon/amazon-plugin" revision="4de5bbb998d1cd3beba45f82081a6393b4a85d2d" upstream="rdk-next"/>
+  <project name="apps/amazon/rdk-oe/meta-rdk-amazon" path="meta-rdk-amazon" revision="4e81b63629650e9315063379ed63d389e1ed330b" upstream="rdk-next" dest-branch="rdk-next"/>/>
+
   <project name="components/generic/rdk-oe/meta-cmf-qt5" path="meta-cmf-qt5" revision="0598b63e973a4bfdb773ad80243af5ba1852d36a" upstream="rdk-next" dest-branch="rdk-next"/>
   <project name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="68cec057876ede546c27792882508128722bd362" upstream="rdk-next" dest-branch="rdk-next"/>
   <project name="components/generic/rdk-oe/meta-cmf-video-reference" path="meta-cmf-video-reference" revision="3e79f7bda31e49e17c9ab1b3bff000ae1a000138" upstream="master" dest-branch="master"/>
