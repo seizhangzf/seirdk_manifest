@@ -8,8 +8,8 @@
   <remote name="rdk-amlogic" fetch="https://code.rdkcentral.com/r/collaboration/soc/amlogic/"/>
   <default remote="cmf" revision="master" sync-j="2"/>
   
-   <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="2cb826fccf718307fc7b53f2e9c5cbb8a12672d5" upstream="amlogic-ref-dunfell-rdkservices"/>
-  <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="f27a3695676393b3425e6bb7f7cc40715f8e7978" upstream="amlogic-ref-dunfell-rdkservices"/>
+  <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="ba7ebd2e87c706d9022f8491ccc087924b33fd7a" upstream="amlogic-ref-dunfell-rdkservices"/>
+  <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="ab4cba01f43e019038d4bf90dc08b3c419b1c32b" upstream="amlogic-ref-dunfell-rdkservices"/>
   <project remote="cmf" name="apps/amazon/amazon-plugin" path="apps/amazon/amazon-plugin" revision="rdk-next"/>
   <project remote="cmf" name="apps/amazon/rdk-oe/meta-rdk-amazon" path="meta-rdk-amazon" revision="rdk-next" />
   <project name="yocto_oe/layers/meta-rdk-aml" path="meta-rdk-aml" remote="rdk-amlogic" revision="rdk-next" upstream="rdk-next" dest-branch="rdk-next"/>
@@ -42,4 +42,5 @@
   <project name="rdk/components/opensource/oe/meta-qt5" path="meta-qt5" revision="rdk/morty"/>
   <project name="rdk/components/opensource/oe/meta-virtualization" path="meta-virtualization" revision="dunfell"/>
   <project name="rdk/components/opensource/oe/openembedded-core" path="openembedded-core" revision="rdk/dunfell"/>
+  <project name="meta-security" path="meta-security" revision="93232ae6d52b0d1968aa0ce69fa745e85e3bbc6b" remote="yocto" dest-branch="dunfell"/>
 </manifest>
