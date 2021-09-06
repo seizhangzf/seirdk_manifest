@@ -6,7 +6,7 @@
   <remote name="openembedded" fetch="https://git.openembedded.org"/>
   <remote name="yocto" fetch="http://git.yoctoproject.org/git"/>
   <remote name="rdk-amlogic" fetch="https://code.rdkcentral.com/r/collaboration/soc/amlogic/"/>
-  <remote name="openlinux-amlogic" fetch="ssh://git@openlinux.amlogic.com/"/>
+  <remote name="amlogic" fetch="ssh://git@openlinux.amlogic.com/"/>
   <default remote="cmf" revision="master" sync-j="2"/>
   
   <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="57e90846012eaa724830c2ab81d77ec3f89bc271" upstream="amlogic-ref-dunfell-rdkservices"/>
