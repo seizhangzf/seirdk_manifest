@@ -14,7 +14,7 @@
   <project dest-branch="rdk-next" name="apps/amazon/AVPK2" revision="48bf0631f5fddce715b52abf75f5949df1f68913" upstream="rdk-next"/>
   <project dest-branch="rdk-next" name="apps/amazon/amazon-plugin" revision="2c298c63e89486f0a3475d07df3203c8473401ca" upstream="rdk-next"/>
   <project dest-branch="rdk-next" name="apps/amazon/rdk-oe/meta-rdk-amazon" path="meta-rdk-amazon" revision="04f79a639ea89dc77304c2ba48ffe1719a6002d1" upstream="rdk-next"/>
-  <project name="yocto_oe/layers/meta-rdk-aml" path="meta-rdk-aml" remote="rdk-amlogic" revision="5452eac55ba57729a6098d16b8266f035142c2e7" upstream="rdk-next" dest-branch="rdk-next"/>
+  <project name="yocto_oe/layers/meta-rdk-aml" path="meta-rdk-aml" remote="rdk-amlogic" revision="b59b3ad43fdd8fc92972d78164b1a41ddb0b606f" upstream="rdk-next" dest-branch="rdk-next"/>
   
   <project name="components/generic/rdk-oe/meta-cmf-qt5" path="meta-cmf-qt5" revision="0293e5c4b70383514223970a664f879cda52c4a0" upstream="rdk-next" dest-branch="rdk-next"/>
   <project name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="bd9234a6405c7dca16a4199aa164b88db0356317" upstream="rdk-next" dest-branch="rdk-next"/>
