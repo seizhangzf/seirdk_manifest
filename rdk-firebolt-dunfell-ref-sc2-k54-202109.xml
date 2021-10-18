@@ -9,7 +9,7 @@
   <remote name="amlogic" fetch="ssh://git@openlinux.amlogic.com/"/>
   <default remote="cmf" revision="master" sync-j="2"/>
   
-  <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="17a44abe15c33f5bf4db616576db0867b391130d" upstream="amlogic-ref-dunfell-rdkservices"/>
+  <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="13175edc03aa0098bce1d8b61095753de3ac3212" upstream="amlogic-ref-dunfell-rdkservices"/>
   <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="5c16b76fab157709843d033c8cfbb96556ea30c6" upstream="amlogic-ref-dunfell-rdkservices"/>
 
   <!--
