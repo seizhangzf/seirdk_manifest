@@ -24,7 +24,6 @@
   <project name="components/generic/rdk-oe/meta-cmf-video-restricted" path="meta-cmf-video-restricted"/>  
   <project name="components/generic/rdk-oe/meta-dvb" path="meta-dvb" revision="rdk-next"/>
   <project name="components/generic/rdk-oe/meta-rdk-containers" path="meta-rdk-containers" revision="rdk-next"/>
-  <project name="components/generic/rdk-oe/meta-rdk-video" path="meta-rdk-video" revision="rdk-next"/>
   <project name="components/opensource/patches/qtbase-5.1.1" path="meta-cmf-qt5/recipes-qt/qt5/qtbase-5.1.1" revision="rdk-next"/>
   <project name="components/opensource/patches/qtwebkit-5.1.1" path="meta-cmf-qt5/recipes-qt/qt5/qtwebkit-5.1.1" revision="rdk-next"/>
   <project name="components/opensource/patches/qtwebsockets-0.9.0" path="meta-cmf-qt5/recipes-qt/qt5/qtwebsockets-5.1.1" revision="rdk-next"/>
@@ -33,6 +32,7 @@
   <project name="docs"/>
   <project name="rdk/components/generic/rdk-oe/meta-cmf" path="meta-cmf" revision="rdk-next"/>
   <project name="rdk/components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="rdk-next"/>
+  <project name="rdk/components/generic/rdk-oe/meta-rdk-video" path="meta-rdk-video" revision="rdk-next"/>
   <project name="rdk/components/generic/rdk-oe/meta-rdk-ext" path="meta-rdk-ext" revision="rdk-next"/>
   <project name="rdk/components/generic/rdk-oe/meta-rdk-voice-sdk" path="meta-rdk-voice-sdk" revision="rdk-next"/>
   <project name="rdk/components/opensource/oe/bitbake" path="openembedded-core/bitbake" revision="1.46"/>
