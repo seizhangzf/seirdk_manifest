@@ -9,13 +9,13 @@
   <remote name="amlogic" fetch="ssh://git@openlinux.amlogic.com/"/>
   <default remote="cmf" revision="master" sync-j="2"/>
  
-  <!--
-  <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="041a9a81e2a07a1e0038ddfeceeea71da09e6459" upstream="amlogic-ref-dunfell-rdkservices"/>
-  <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="5c16b76fab157709843d033c8cfbb96556ea30c6" upstream="amlogic-ref-dunfell-rdkservices"/>
-  -->
+  <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="66cc92385687ca3bb7ab70404fa3cc4193467d7d" upstream="amlogic-ref-dunfell-rdkservices"/>
+  <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="ec5ea46b88eec59b8719e85c667f8f44d66701b6" upstream="amlogic-ref-dunfell-rdkservices"/>
 
+  <!--
   <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="amlogic-ref-dunfell-rdkservices"/>
   <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="amlogic-ref-dunfell-rdkservices"/>
+  -->
 
   <project dest-branch="rdk-next" name="components/generic/rdk-oe/meta-cmf-qt5" path="meta-cmf-qt5" revision="d8d2d0e5f8b83db8bad3dff4b7fce922cd581446" upstream="rdk-next"/>
   <project dest-branch="rdk-next" name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="d318457c43c6ca0b82b4cf5386ca7aeb4ecf2b2e" upstream="rdk-next"/>
