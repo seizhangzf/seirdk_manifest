@@ -7,16 +7,18 @@
   <remote name="yocto" fetch="http://git.yoctoproject.org/git"/>
   <remote name="rdk-amlogic" fetch="https://code.rdkcentral.com/r/collaboration/soc/amlogic/"/>
   <default remote="cmf" revision="master" sync-j="2"/>
-  
+
+  <!--  
   <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="ba7ebd2e87c706d9022f8491ccc087924b33fd7a" upstream="amlogic-ref-dunfell-rdkservices"/>
   <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="ab4cba01f43e019038d4bf90dc08b3c419b1c32b" upstream="amlogic-ref-dunfell-rdkservices"/>
+  -->
   <project remote="cmf" name="apps/amazon/amazon-plugin" path="apps/amazon/amazon-plugin" revision="rdk-next"/>
   <project remote="cmf" name="apps/amazon/rdk-oe/meta-rdk-amazon" path="meta-rdk-amazon" revision="rdk-next" />
   <project name="yocto_oe/layers/meta-rdk-aml" path="meta-rdk-aml" remote="rdk-amlogic" revision="rdk-next" upstream="rdk-next" dest-branch="rdk-next"/>
-  <!--
+
   <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="amlogic-ref-dunfell-rdkservices"/>
   <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="amlogic-ref-dunfell-rdkservices"/>
-  -->
+
   <project name="components/generic/rdk-oe/meta-cmf-qt5" path="meta-cmf-qt5" revision="rdk-next"/>
   <project name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="rdk-next"/>
   <project name="components/generic/rdk-oe/meta-cmf-video-reference" path="meta-cmf-video-reference"/>
