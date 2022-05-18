@@ -9,8 +9,8 @@
   <remote name="amlogic" fetch="ssh://git@openlinux.amlogic.com/"/>
   <default remote="cmf" revision="master" sync-j="2"/>
  
-  <project name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="e8df6a9f800bec973d01dfc47eb2000f80504b0b" upstream="amlogic-ref-dunfell-rdkservices"/>
-  <project name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="39068e210cfef50af41aec2249f375f0a61070b1" upstream="amlogic-ref-dunfell-rdkservices"/>
+  <project dest-branch="openlinux/rdk-firebolt-dunfell-20220430" name="yocto_oe/layers/meta-amlogic" path="meta-amlogic" remote="rdk-amlogic" revision="d15703072639f3c55bb6f990d36050e3ec622d1f" upstream="openlinux/rdk-firebolt-dunfell-20220430"/>
+  <project dest-branch="openlinux/rdk-firebolt-dunfell-20220430" name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="5f6e4564483b8c90f77bff8e01d677529d4d4bca" upstream="openlinux/rdk-firebolt-dunfell-20220430"/>
 
   <project dest-branch="rdk-next" name="components/generic/rdk-oe/meta-cmf-qt5" path="meta-cmf-qt5" revision="d8d2d0e5f8b83db8bad3dff4b7fce922cd581446" upstream="rdk-next"/>
   <project dest-branch="rdk-next" name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="84a52db5f94b885af5653e5a601ac56160a5b675" upstream="rdk-next"/>
