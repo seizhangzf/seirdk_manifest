@@ -10,7 +10,7 @@
   <remote name="seiserver" fetch="https://github.com/seizhangzf/"/>  
   <default remote="cmf" revision="master" sync-j="2"/>
  
-  <project dest-branch="rdk_sei_202204" name="meta-amlogic" path="meta-amlogic" remote="seiserver"  upstream="rdk_sei_202204"/>
+  <project dest-branch="rdk_sei_202204" name="meta-amlogic" path="meta-amlogic" remote="seiserver"  revision="rdk_sei_202204" upstream="rdk_sei_202204"/>
   <project dest-branch="openlinux/rdk-firebolt-dunfell-20220430" name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="5f6e4564483b8c90f77bff8e01d677529d4d4bca" upstream="openlinux/rdk-firebolt-dunfell-20220430"/>
 
   <project dest-branch="rdk-next" name="components/generic/rdk-oe/meta-cmf-qt5" path="meta-cmf-qt5" revision="d8d2d0e5f8b83db8bad3dff4b7fce922cd581446" upstream="rdk-next"/>
