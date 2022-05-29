@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="cmf" fetch="https://code.rdkcentral.com/r/a/" review="https://code.rdkcentral.com/r/a/"/>
+  <remote name="github" fetch="https://github.com"/>
+  <remote name="linaro" fetch="http://git.linaro.org"/>
+  <remote name="openembedded" fetch="https://git.openembedded.org"/>
+  <remote name="yocto" fetch="http://git.yoctoproject.org/git"/>
+  <remote name="rdk-amlogic" fetch="https://code.rdkcentral.com/r/collaboration/soc/amlogic/"/>
+  <remote name="amlogic" fetch="ssh://git@openlinux.amlogic.com/"/>
+  <remote name="origin" fetch="https://github.com/seizhangzf/"/>  
+  <default remote="cmf" revision="master" sync-j="2"/>
+ 
+  <project dest-branch="master" name="meta-amlogic" path="meta-amlogic" remote="origin"  upstream="master"/>
+  <project dest-branch="openlinux/rdk-firebolt-dunfell-20220430" name="yocto_oe/layers/meta-rdk-bsp-amlogic" path="meta-rdk-bsp-amlogic" remote="rdk-amlogic" revision="5f6e4564483b8c90f77bff8e01d677529d4d4bca" upstream="openlinux/rdk-firebolt-dunfell-20220430"/>
+
+  <project dest-branch="rdk-next" name="components/generic/rdk-oe/meta-cmf-qt5" path="meta-cmf-qt5" revision="d8d2d0e5f8b83db8bad3dff4b7fce922cd581446" upstream="rdk-next"/>
+  <project dest-branch="rdk-next" name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="84a52db5f94b885af5653e5a601ac56160a5b675" upstream="rdk-next"/>
+  <project dest-branch="master" name="components/generic/rdk-oe/meta-cmf-video-reference" path="meta-cmf-video-reference" revision="f47138a18966c2000cac5ac8cab033fd345645a5" upstream="master"/>
+  <project dest-branch="master" name="components/generic/rdk-oe/meta-cmf-video-reference-next" path="meta-cmf-video-reference-next" revision="c636c0eee5e9e8bb80c49598183054e8f17a177f" upstream="master"/>
+  <project dest-branch="master" name="components/generic/rdk-oe/meta-cmf-video-restricted" path="meta-cmf-video-restricted" revision="9d437404f7f92a531de4804b6adfa8e092794b36" upstream="master"/>
+  <project dest-branch="rdk-next" name="components/generic/rdk-oe/meta-dvb" path="meta-dvb" revision="5ed060b783fa5e0e626532c4ccf3a7f42ce313ff" upstream="rdk-next"/>
+  <project dest-branch="rdk-next" name="components/generic/rdk-oe/meta-rdk-containers" path="meta-rdk-containers" revision="dadbf43d336d1c2e9d464b9326ddc2810cc6bf0b" upstream="rdk-next"/>
+  <project dest-branch="rdk-next" name="components/opensource/patches/qtbase-5.1.1" path="meta-cmf-qt5/recipes-qt/qt5/qtbase-5.1.1" revision="510160a21dcbc26bd00246841d10964e9ff497b9" upstream="rdk-next"/>
+  <project dest-branch="rdk-next" name="components/opensource/patches/qtwebkit-5.1.1" path="meta-cmf-qt5/recipes-qt/qt5/qtwebkit-5.1.1" revision="3f3646966af330655b5b4bc100a6895136b336a3" upstream="rdk-next"/>
+  <project dest-branch="rdk-next" name="components/opensource/patches/qtwebsockets-0.9.0" path="meta-cmf-qt5/recipes-qt/qt5/qtwebsockets-5.1.1" revision="cef3ca80751b888b56ed281a07e6f8fa059cf313" upstream="rdk-next"/>
+  <project dest-branch="rdk-next" name="components/restricted/rdk-oe/meta-cmf-restricted" path="meta-cmf-restricted" revision="b8ce1500bbf461a6855cef129fe38d2c9cb2c346" upstream="rdk-next"/>
+  <project dest-branch="rdk-next" name="components/restricted/rdk-oe/meta-rdk-restricted" path="meta-rdk-restricted" revision="a3c6b29e4f359b0f24fe5f323d1eccfeac9e7e19" upstream="rdk-next"/>
+  <project dest-branch="master" name="docs" revision="c3f73c80b1542af0f4136e95894737283d1d16dd" upstream="master"/>
+  <project dest-branch="dunfell" name="meta-security" remote="yocto" revision="93232ae6d52b0d1968aa0ce69fa745e85e3bbc6b"/>
+  <project dest-branch="rdk-next" name="rdk/components/generic/rdk-oe/meta-cmf" path="meta-cmf" revision="d30780acd2235a386c8c9ad0bf3fe0574d71d2ee" upstream="rdk-next"/>
+  <project dest-branch="rdk-next" name="rdk/components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="8b1221f416b5288125dcf7b2037d07c62162add9" upstream="rdk-next"/>
+  <project dest-branch="rdk-next" name="rdk/components/generic/rdk-oe/meta-rdk-ext" path="meta-rdk-ext" revision="ff0a0ec3e0eff4b041a94462f61f419cb8bb1168" upstream="rdk-next"/>
+  <project dest-branch="rdk-next" name="rdk/components/generic/rdk-oe/meta-rdk-video" path="meta-rdk-video" revision="9da98f76df7b9f7218c26db1376a3f30a2456ae8" upstream="rdk-next"/>
+  <project dest-branch="rdk-next" name="rdk/components/generic/rdk-oe/meta-rdk-voice-sdk" path="meta-rdk-voice-sdk" revision="07ceec8632cda2ac093d4e9ecf416e5f683e4c4f" upstream="rdk-next"/>
+  <project dest-branch="1.46" name="rdk/components/opensource/oe/bitbake" path="openembedded-core/bitbake" revision="d22cc1e587c650fd5f90cda32f5720f8a3105aac" upstream="1.46"/>
+  <project dest-branch="dunfell" name="rdk/components/opensource/oe/meta-gplv2" path="meta-gplv2" revision="60b251c25ba87e946a0ca4cdc8d17b1cb09292ac" upstream="dunfell"/>
+  <project dest-branch="rdk/dunfell" name="rdk/components/opensource/oe/meta-openembedded" path="meta-openembedded" revision="7ee5b948c2ba79dae3ab8d681efaea449147fe49" upstream="rdk/dunfell"/>
+  <project dest-branch="dunfell" name="rdk/components/opensource/oe/meta-python2" path="meta-python2" revision="b901080cf57d9a7f5476ab4d96e56c30db8170a8" upstream="dunfell"/>
+  <project dest-branch="rdk/morty" name="rdk/components/opensource/oe/meta-qt5" path="meta-qt5" revision="e1cd3358018e3d43c01bf2f91e5ffcf986b5d774" upstream="rdk/morty"/>
+  <project dest-branch="dunfell" name="rdk/components/opensource/oe/meta-virtualization" path="meta-virtualization" revision="c5f61e547b90aa8058cf816f00902afed9c96f72" upstream="dunfell"/>
+  <project dest-branch="rdk/dunfell" name="rdk/components/opensource/oe/openembedded-core" path="openembedded-core" revision="a5c26543fe62e26db9db461c77df1dbccf3fa39c" upstream="rdk/dunfell"/>
+</manifest>
